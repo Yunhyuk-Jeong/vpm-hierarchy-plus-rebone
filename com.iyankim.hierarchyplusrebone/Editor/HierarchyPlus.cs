@@ -53,7 +53,7 @@ namespace IyanKim.HierarchyPlusRebone
 		#endregion
 
 		#region Window
-		[MenuItem("Iyan-Kim/Tools/Hierarchy Plus Rebone", false, 366)]
+		[MenuItem("Iyan-Kim/Tools/Hierarchy Plus Rebone")]
 		private static void OpenSettings()
 		{
 			GetWindow<HierarchyPlus>($"{PRODUCT_NAME} Settings");
