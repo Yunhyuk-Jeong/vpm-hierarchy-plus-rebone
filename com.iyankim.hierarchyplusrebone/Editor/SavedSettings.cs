@@ -6,8 +6,8 @@ using System.Text;
 using System.Text.RegularExpressions;
 using UnityEditor;
 using UnityEngine;
-using static IyanKim.HierarchyPlusRebone.StylesContainer;
-using static IyanKim.HierarchyPlusRebone.ContentContainer;
+using static IyanKim.EditorTools.StylesContainer;
+using static IyanKim.EditorTools.ContentContainer;
 
 namespace IyanKim.EditorTools
 {

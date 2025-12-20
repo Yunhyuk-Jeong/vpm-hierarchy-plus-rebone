@@ -1,7 +1,7 @@
 {
 	"name": "com.iyankim.hierarchyplusrebone",
 	"displayName": "Hierarchy Plus Rebone",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "A rebuilt and modernized version of HierarchyPlus. Enhances the Unity Hierarchy with colored rows, component icons, regex filtering, quick toggle buttons, and style customization.",
 	"url": "https://github.com/Yunhyuk-Jeong/vpm-hierarchy-plus-rebone",
 	"author": {

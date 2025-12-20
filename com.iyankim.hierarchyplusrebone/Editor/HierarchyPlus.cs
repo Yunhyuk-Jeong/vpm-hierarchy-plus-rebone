@@ -6,8 +6,8 @@ using System.Reflection;
 using Object = UnityEngine.Object;
 using System.IO;
 using System.Linq;
-using static IyanKim.HierarchyPlusRebone.SavedSettings;
-using static IyanKim.HierarchyPlusRebone.StylesContainer;
+using static IyanKim.EditorTools.SavedSettings;
+using static IyanKim.EditorTools.StylesContainer;
 
 namespace IyanKim.EditorTools
 {
