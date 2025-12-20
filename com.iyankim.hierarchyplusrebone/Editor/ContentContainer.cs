@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace IyanKim.HierarchyPlusRebone
+namespace IyanKim.EditorTools
 {
 	internal class ContentContainer
 	{
 		internal static ContentContainer _contentContainer;
 		internal static ContentContainer Content => _contentContainer ?? (_contentContainer = new ContentContainer());
 
-		internal readonly GUIContent checkmarkIcon = new GUIContent(EditorGUIUtility.IconContent("TestPassed")) {tooltip = "Up to Date!"};
+		internal readonly GUIContent checkmarkIcon = new GUIContent(EditorGUIUtility.IconContent("TestPassed")) { tooltip = "Up to Date!" };
 		internal readonly GUIContent infoIcon = new GUIContent(EditorGUIUtility.IconContent("UnityEditor.InspectorWindow"));
-		internal readonly GUIContent resetIcon = new GUIContent(EditorGUIUtility.IconContent("Refresh")) {tooltip = "Reset"};
-		internal readonly GUIContent folderIcon = new GUIContent(EditorGUIUtility.IconContent("FolderOpened Icon")) {tooltip = "Select a folder"};
+		internal readonly GUIContent resetIcon = new GUIContent(EditorGUIUtility.IconContent("Refresh")) { tooltip = "Reset" };
+		internal readonly GUIContent folderIcon = new GUIContent(EditorGUIUtility.IconContent("FolderOpened Icon")) { tooltip = "Select a folder" };
 
 		private readonly GUIContent _tempContent = new GUIContent();
 

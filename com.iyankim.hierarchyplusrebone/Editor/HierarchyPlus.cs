@@ -9,7 +9,7 @@ using System.Linq;
 using static IyanKim.HierarchyPlusRebone.SavedSettings;
 using static IyanKim.HierarchyPlusRebone.StylesContainer;
 
-namespace IyanKim.HierarchyPlusRebone
+namespace IyanKim.EditorTools
 {
 	public class HierarchyPlus : EditorWindow
 	{
@@ -612,7 +612,7 @@ namespace IyanKim.HierarchyPlusRebone
 					EditorGUIUtility.AddCursorRect(r, MouseCursor.Link);
 				}
 				else using (new EditorGUI.DisabledScope(true))
-						GUILayout.Toggle(true, " ", EditorStyles.radioButton, GUILayout.Width(18), GUILayout.Height(18));
+					GUILayout.Toggle(true, " ", EditorStyles.radioButton, GUILayout.Width(18), GUILayout.Height(18));
 
 				EditorGUILayout.PrefixLabel(label);
 				color.DrawField(GUIContent.none);

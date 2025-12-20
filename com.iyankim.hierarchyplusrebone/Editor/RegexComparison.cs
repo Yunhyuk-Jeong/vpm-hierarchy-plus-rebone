@@ -7,13 +7,13 @@ using System.Text.RegularExpressions;
 using UnityEditor;
 using UnityEngine;
 
-namespace IyanKim.HierarchyPlusRebone
+namespace IyanKim.EditorTools
 {
 	[Serializable]
 	internal class RegexComparison
 	{
-		internal readonly GUIContent fontIcon = new GUIContent(EditorGUIUtility.IconContent("Font Icon")) {tooltip = "Case Sensitive"};
-		internal readonly GUIContent regexIcon = new GUIContent(EditorGUIUtility.IconContent("d_PreTexR@2x")) {tooltip = "Regex Mode"};
+		internal readonly GUIContent fontIcon = new GUIContent(EditorGUIUtility.IconContent("Font Icon")) { tooltip = "Case Sensitive" };
+		internal readonly GUIContent regexIcon = new GUIContent(EditorGUIUtility.IconContent("d_PreTexR@2x")) { tooltip = "Regex Mode" };
 
 		[SerializeField] internal ComparisonType _comparisonType = ComparisonType.Contains;
 		[SerializeField] internal bool caseSensitive;
@@ -61,10 +61,10 @@ namespace IyanKim.HierarchyPlusRebone
 			if (comparisonType == ComparisonType.Regex) return comparisonPattern;
 
 			StringBuilder finalPattern = new StringBuilder();
-			if (((int) comparisonType & 1) > 0) finalPattern.Append('^');
+			if (((int)comparisonType & 1) > 0) finalPattern.Append('^');
 			if (!caseSensitive) finalPattern.Append("(?i)");
 			finalPattern.Append(Regex.Escape(comparisonPattern));
-			if (((int) comparisonType & 2) > 0) finalPattern.Append('$');
+			if (((int)comparisonType & 2) > 0) finalPattern.Append('$');
 			return finalPattern.ToString();
 		}
 

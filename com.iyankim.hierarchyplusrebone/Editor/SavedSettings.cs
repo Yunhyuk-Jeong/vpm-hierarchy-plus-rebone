@@ -9,7 +9,7 @@ using UnityEngine;
 using static IyanKim.HierarchyPlusRebone.StylesContainer;
 using static IyanKim.HierarchyPlusRebone.ContentContainer;
 
-namespace IyanKim.HierarchyPlusRebone
+namespace IyanKim.EditorTools
 {
 	[Serializable]
 
@@ -251,7 +251,7 @@ namespace IyanKim.HierarchyPlusRebone
 				activeColor = activeColor ?? GUI.backgroundColor;
 				inactiveColor = inactiveColor ?? GUI.backgroundColor;
 				Color ogColor = GUI.backgroundColor;
-				GUI.backgroundColor = value ? (Color) activeColor : (Color) inactiveColor;
+				GUI.backgroundColor = value ? (Color)activeColor : (Color)inactiveColor;
 				value = GUILayout.Toggle(value, value || inactiveLabel == null ? activeLabel : inactiveLabel, style == null ? GUI.skin.button : style, options);
 				GUI.backgroundColor = ogColor;
 			}
@@ -265,7 +265,7 @@ namespace IyanKim.HierarchyPlusRebone
 			}
 
 			public static implicit operator bool(SavedBool s) => s._value;
-			internal override void Reset() => value = (bool) defaultValue;
+			internal override void Reset() => value = (bool)defaultValue;
 
 		}
 
@@ -297,9 +297,9 @@ namespace IyanKim.HierarchyPlusRebone
 				OnChanged = OnChangedCallback;
 			}
 
-			internal override void Reset() => value = (float) defaultValue;
+			internal override void Reset() => value = (float)defaultValue;
 
-			public static implicit operator int(SavedFloat s) => (int) s._value;
+			public static implicit operator int(SavedFloat s) => (int)s._value;
 			public static implicit operator float(SavedFloat s) => s._value;
 		}
 
@@ -330,7 +330,7 @@ namespace IyanKim.HierarchyPlusRebone
 				OnChanged = OnChangedCallback;
 			}
 
-			internal override void Reset() => value = (string) defaultValue;
+			internal override void Reset() => value = (string)defaultValue;
 
 			public override string ToString() => value;
 
@@ -406,7 +406,7 @@ namespace IyanKim.HierarchyPlusRebone
 				}
 			}
 
-			internal override void Reset() => color = (Color) defaultValue;
+			internal override void Reset() => color = (Color)defaultValue;
 
 			public static implicit operator Color(SavedColor s) => s.color;
 		}
@@ -424,10 +424,12 @@ namespace IyanKim.HierarchyPlusRebone
 
 		#region Saved Data
 
-		[SerializeField] internal SavedString[]
-			hiddenIconTypes = {new SavedString("MeshFilter")};
+		[SerializeField]
+		internal SavedString[]
+			hiddenIconTypes = { new SavedString("MeshFilter") };
 
-		[SerializeField] internal SavedColor
+		[SerializeField]
+		internal SavedColor
 			rowOddColor = new SavedColor(new Color(0.5f, 0.5f, 1, 0.07f)),
 			rowEvenColor = new SavedColor(new Color(0, 0, 0, 0.07f)),
 			colorOne = new SavedColor(Color.white),
@@ -438,7 +440,8 @@ namespace IyanKim.HierarchyPlusRebone
 			iconFadedTintColor = new SavedColor(new Color(1, 1, 1, 0.5f)),
 			iconBackgroundColor = new SavedColor(new Color(0.22f, 0.22f, 0.22f));
 
-		[SerializeField] internal SavedBool
+		[SerializeField]
+		internal SavedBool
 			enabled = new SavedBool(true),
 			colorsEnabled = new SavedBool(true),
 			iconsEnabled = new SavedBool(true),
@@ -466,7 +469,8 @@ namespace IyanKim.HierarchyPlusRebone
 			displayLayerIndex = new SavedBool(false),
 			displayDefaultLayerLabel = new SavedBool(false);
 
-		[SerializeField] internal SavedFloat
+		[SerializeField]
+		internal SavedFloat
 			guiXOffset = new SavedFloat(0),
 			tagLabelWidth = new SavedFloat(75),
 			layerLabelWidth = new SavedFloat(75);

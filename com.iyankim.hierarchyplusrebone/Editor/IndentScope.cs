@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace IyanKim.HierarchyPlusRebone
+namespace IyanKim.EditorTools
 {
 	internal sealed class IndentScope : IDisposable
 	{
