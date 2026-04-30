@@ -57,7 +57,7 @@ This prevents conflicts with the abandoned original version.
 
 Click:
 
-👉 **[Add Iyan-Kim VPM Repository to VCC](vcc://vpm/addRepo?url=https://raw.githubusercontent.com/Yunhyuk-Jeong/iyan-vpm/main/vpm.json)**
+👉 **[Add Studio Iyan VPM Repository to VCC](vcc://vpm/addRepo?url=https://raw.githubusercontent.com/Yunhyuk-Jeong/iyan-vpm/main/vpm.json)**
 
 Or add manually:
 
@@ -141,7 +141,7 @@ The license file from the original distribution is included in this package.
 ## 🙏 Credits
 
 **Original Author**: _DreadScripts_ (HierarchyPlus)  
-**Rebone & Rebuild**: _Iyan-Kim_  
+**Rebone & Rebuild**: _Studio Iyan_  
 **Purpose**: Preserve functionality of a discontinued but highly useful Unity extension.
 
 ---

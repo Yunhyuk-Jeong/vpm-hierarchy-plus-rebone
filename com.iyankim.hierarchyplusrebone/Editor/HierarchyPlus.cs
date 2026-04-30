@@ -53,7 +53,7 @@ namespace IyanKim.EditorTools
 		#endregion
 
 		#region Window
-		[MenuItem("Iyan-Kim/Tools/Hierarchy Plus Rebone")]
+		[MenuItem("Studio Iyan/Tools/Hierarchy Plus Rebone")]
 		private static void OpenSettings()
 		{
 			GetWindow<HierarchyPlus>($"{PRODUCT_NAME} Settings");
@@ -253,7 +253,7 @@ namespace IyanKim.EditorTools
 		{
 			using (new ColoredScope(ColoredScope.ColoringType.BG, Color.clear))
 			{
-				if (GUILayout.Button(new GUIContent("Made By Iyan-Kim", "https://github.com/Yunhyuk-Jeong"), Styles.faintLinkLabel))
+				if (GUILayout.Button(new GUIContent("Made By Studio Iyan", "https://github.com/Yunhyuk-Jeong"), Styles.faintLinkLabel))
 					Application.OpenURL("https://github.com/Yunhyuk-Jeong");
 				w_UnderlineLastRectOnHover();
 			}
